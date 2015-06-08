@@ -14,11 +14,15 @@
         tools:layout="@layout/alarm_button_fragment" />
 
     <fragment
-        android:id="@+id/text_fragment"
-        android:name="ua.studio.avoider.MapsFragment"
-        android:layout_width="match_parent"
+        android:tag="tag_fragment_map"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/fragmentMap"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        tools:layout="@layout/maps_fragment" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>
